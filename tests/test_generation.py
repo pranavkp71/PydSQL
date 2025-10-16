@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from datetime import date
 from pydsql.generator import generate_sql
 
+
 def test_basic_product_model():
     class Product(BaseModel):
         product_id: int
