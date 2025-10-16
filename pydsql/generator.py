@@ -2,7 +2,7 @@ from datetime import date
 
 def generate_sql(model):
     table_name = model.__name__.lower()
-    fields = model.__fields__
+    fields = model.model_fields
     type_mapping = {
         int: "INTEGER",
         str: "TEXT",
