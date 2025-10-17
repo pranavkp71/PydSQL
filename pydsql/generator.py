@@ -2,6 +2,7 @@ from datetime import date
 from typing import Type
 from pydantic import BaseModel
 
+
 def generate_sql(model: Type[BaseModel]) -> str:
     """
     Generate a SQL CREATE TABLE statement from a Pydantic model.

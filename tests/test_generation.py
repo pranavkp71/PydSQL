@@ -13,7 +13,7 @@ def test_basic_product_model():
 
     expected_sql = (
         "CREATE TABLE product (\n"
-        "   product_id INTEGER,\n"
+        "    product_id INTEGER,\n"
         "    name TEXT,\n"
         "    price REAL,\n"
         "    launch_date DATE,\n"
