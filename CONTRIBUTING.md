@@ -9,7 +9,7 @@ Thank you for your interest in contributing to PydSQL! We welcome bug fixes, imp
 1. **Fork the repository** and clone it locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/PydSQL.git
+git clone https://github.com/pranavkp71/PydSQL.git
 cd PydSQL
 ```
 
