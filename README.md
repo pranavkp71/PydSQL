@@ -4,7 +4,6 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/pranavkp71/PydSQL/ci.yml?branch=main)](https://github.com/pranavkp71/PydSQL/actions)
 [![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![License](https://img.shields.io/pypi/l/pydsql.svg)](./LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/pydsql.svg)](https://pypi.org/project/pydsql/)
 
 A lightweight Python utility to generate SQL `CREATE TABLE` statements directly from your Pydantic models.
 
