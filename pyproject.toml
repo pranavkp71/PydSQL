@@ -1,6 +1,6 @@
 [project]
 name = "pydsql"
-version = "0.1.1"
+version = "0.1.2"
 description = "Lightweight tool to generate SQL CREATE TABLE statements directly from Pydantic models."
 readme = "README.md"
 license = "MIT"

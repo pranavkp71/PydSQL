@@ -1,7 +1,17 @@
 from datetime import date
+from typing import Type
+from pydantic import BaseModel
 
+def generate_sql(model: Type[BaseModel]) -> str:
+    """
+    Generate a SQL CREATE TABLE statement from a Pydantic model.
 
-def generate_sql(model):
+    Args:
+        model (Type[BaseModel]): A Pydantic model class.
+
+    Returns:
+        str: SQL CREATE TABLE statement.
+    """
     table_name = model.__name__.lower()
     fields = model.model_fields
     type_mapping = {
@@ -20,6 +30,13 @@ def generate_sql(model):
         columns.append(column_def)
 
     columns_sql = ",\n    ".join(columns)
-    sql = f"CREATE TABLE {table_name} (\n   {columns_sql}\n);"
-
+    sql = f"CREATE TABLE {table_name} (\n    {columns_sql}\n);"
     return sql
+
+
+def generate_create_table_statement(model: Type[BaseModel]) -> str:
+    """
+    Generate a SQL CREATE TABLE statement from a Pydantic model.
+    Alias for generate_sql for better clarity.
+    """
+    return generate_sql(model)

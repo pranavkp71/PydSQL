@@ -21,9 +21,7 @@ PydSQL was built to solve this specific pain point. It automates the most tediou
 
 ### Installation
 
-PydSQL is not yet published to PyPI. Until it is released, you can install it locally from source:
+You can now install PydSQL directly from PyPI:
 
 ```bash
-git clone https://github.com/pranavkp71/PydSQL.git
-cd pydsql
-pip install .
+pip install pydsql
