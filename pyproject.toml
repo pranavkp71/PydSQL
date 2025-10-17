@@ -1,13 +1,23 @@
 [project]
 name = "pydsql"
-version = "0.1.2"
+version = "0.1.3"
 description = "Lightweight tool to generate SQL CREATE TABLE statements directly from Pydantic models."
 readme = "README.md"
-license = "MIT"
 authors = [
     { name = "PranavKP", email = "pranavkp170@gmail.com" }
 ]
 requires-python = ">=3.8"
+
+license = { text = "MIT" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "pydantic"
 ]
