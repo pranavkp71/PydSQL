@@ -1,10 +1,8 @@
 ## PydSQL
-
 [![PyPI version](https://img.shields.io/pypi/v/pydsql.svg)](https://pypi.org/project/pydsql/)
 [![Python versions](https://img.shields.io/pypi/pyversions/pydsql.svg)](https://pypi.org/project/pydsql/)
 [![Build](https://img.shields.io/github/actions/workflow/status/pranavkp71/PydSQL/ci.yml?branch=main)](https://github.com/pranavkp71/PydSQL/actions)
-[![Coverage](https://img.shields.io/codecov/c/github/pranavkp71/PydSQL)](https://codecov.io/gh/pranavkp71/PydSQL)
-[![Contributing](https://img.shields.io/pypi/l/pydsql.svg)](./CONTRIBUTING.md)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![License](https://img.shields.io/pypi/l/pydsql.svg)](./LICENSE)
 [![Downloads](https://img.shields.io/pypi/dm/pydsql.svg)](https://pypi.org/project/pydsql/)
 
