@@ -1,6 +1,6 @@
 [project]
 name = "pydsql"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lightweight tool to generate SQL CREATE TABLE statements directly from Pydantic models."
 readme = "README.md"
 license = "MIT"
@@ -25,3 +25,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["pydsql"]
+
+[tool.setuptools.package-data]
+pydsql = ["*.pyi"]
