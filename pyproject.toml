@@ -3,7 +3,7 @@ name = "pydsql"
 version = "0.1.0"
 description = "Lightweight tool to generate SQL CREATE TABLE statements directly from Pydantic models."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
     { name = "PranavKP", email = "pranavkp170@gmail.com" }
 ]
