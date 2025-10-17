@@ -1,6 +1,6 @@
 # PydSQL
 
-[![PyPI version](https://badge.fury.io/py/pydsql.svg)](https://badge.fury.io/py/pydsql) 
+[![PyPI version](https://badge.fury.io/py/pydsql.svg)](https://badge.fury.io/py/pydsql)  
 A lightweight Python utility to generate SQL `CREATE TABLE` statements directly from your Pydantic models.
 
 ---
@@ -21,7 +21,9 @@ PydSQL was built to solve this specific pain point. It automates the most tediou
 
 ### Installation
 
-> **Note:** PydSQL is not yet published to PyPI. This is a placeholder for future installation instructions.
+PydSQL is not yet published to PyPI. Until it is released, you can install it locally from source:
 
 ```bash
-pip install pydsql
+git clone https://github.com/pranavkp71/PydSQL.git
+cd pydsql
+pip install .
