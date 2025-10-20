@@ -2,6 +2,9 @@ from datetime import date
 from typing import Type
 from pydantic import BaseModel
 
+from typing import get_origin, get_args, Optional, Union
+from pydsql.column import Column
+
 
 def generate_sql(model: Type[BaseModel]) -> str:
     """
@@ -15,6 +18,7 @@ def generate_sql(model: Type[BaseModel]) -> str:
     """
     table_name = model.__name__.lower()
     fields = model.model_fields
+    
     type_mapping = {
         int: "INTEGER",
         str: "TEXT",
@@ -25,10 +29,16 @@ def generate_sql(model: Type[BaseModel]) -> str:
 
     columns = []
     for field_name, field in fields.items():
-        python_type = field.annotation
-        sql_type = type_mapping.get(python_type, "TEXT")
-        column_def = f"{field_name} {sql_type}"
-        columns.append(column_def)
+
+        # Creates instance of a column builder
+        column = Column(field_name,field)
+
+        # Applies the check for NULL and UNIQUE
+        column.apply_nullability()
+        column.apply_unique()
+        
+        # appends the column string made by .build()
+        columns.append( column.build() )
 
     columns_sql = ",\n    ".join(columns)
     sql = f"CREATE TABLE {table_name} (\n    {columns_sql}\n);"
