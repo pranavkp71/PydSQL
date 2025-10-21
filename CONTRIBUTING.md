@@ -10,7 +10,6 @@ Thank you for your interest in contributing to PydSQL! We welcome bug fixes, imp
 
 ```bash
 git clone https://github.com/pranavkp71/PydSQL.git
-cd PydSQL
 ```
 
 2. **Create a new branch** for your feature or bugfix:
