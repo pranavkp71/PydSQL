@@ -25,7 +25,6 @@ class Column (FieldInspector):
         return mapping.get(self.annotation,"TEXT")
     
     def apply_nullability(self):
-        print(self.required,' is it ?')
         if self.required:
             return self.sql_parts.append("NOT NULL")
         return self
@@ -36,7 +35,6 @@ class Column (FieldInspector):
         return self
     
     def build(self):
-        print('in build')
         return f"{self.name} " + " ".join(self.sql_parts)
     
 
